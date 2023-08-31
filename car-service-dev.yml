@@ -26,3 +26,12 @@ spring:
             trusted:
               packages: "*"
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+  eureka:
+    client:
+      fetch-registery: true
+      register-with-eureka: true  
+      service-url:
+        default-zone: http://localhost:8500/eureka
+      instance:
+        instance-id: ${spring.application.name}:${random.value}
+        prefer-ip-address: true
