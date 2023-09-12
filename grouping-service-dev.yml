@@ -3,8 +3,8 @@ spring:
     name: GROUPING-SERVICE
   datasource:
     username: root
-    password: ygz123
-    url: jdbc:mysql://localhost:3306/vechiletracking?createDatabaseIfNotExist=true
+    password: 'ygz123'
+    url: jdbc:mysql://localhost:3307/vechiletracking?createDatabaseIfNotExist=true
   jpa:
     properties:
       hibernate:
