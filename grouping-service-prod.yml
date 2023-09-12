@@ -12,7 +12,7 @@ spring:
     hibernate:
       ddl-auto: update
 eureka:
-  client:
+  client:   
     fetch-registery: true
     register-with-eureka: true  
     service-url:
