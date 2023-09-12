@@ -2,6 +2,7 @@ spring:
   application:
     name: COMPANY-SERVICE
   datasource:
+    driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: 'ygz123'
     url: jdbc:mysql://localhost:3307/vechiletracking?createDatabaseIfNotExist=true
@@ -16,7 +17,7 @@ eureka:
     fetch-registery: true
     register-with-eureka: true  
     service-url:
-      default-zone: http://localhost:8500/eureka
+      default-zone: http://localhost:8761/eureka
     instance:
       instance-id: ${spring.application.name}:${random.value}
       prefer-ip-address: true
