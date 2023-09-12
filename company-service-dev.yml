@@ -13,7 +13,7 @@ spring:
       ddl-auto: update
 eureka:
   client:
-    fetch-registery: true
+    fetch-registry: true
     register-with-eureka: true  
     service-url:
       default-zone: http://localhost:8500/eureka
